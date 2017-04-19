@@ -145,8 +145,8 @@ def predictedToActualRSA((subj,net,fromnet,tasks,nblocks,Ci,nodespercommunity,da
 
     
     # Get averages 
-    matched_rhos_avg = np.mean(np.arctanh(matched_rhos))
-    mismatch_rhos_avg = np.mean(np.arctanh(mismatch_rhos))
+    matched_rhos_avg = np.arctanh(np.mean(matched_rhos))
+    mismatch_rhos_avg = np.arctanh(np.mean(mismatch_rhos))
     info_transfer_est = matched_rhos_avg - mismatch_rhos_avg
     return info_transfer_est
         
