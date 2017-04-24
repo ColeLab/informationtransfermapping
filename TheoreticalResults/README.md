@@ -1,8 +1,8 @@
-# Information transfer mapping
-#### Public code release for Ito et al. (2017)
+# Information transfer mapping -- simulation results (based on mathematical model)
+
 #### Author: Takuya Ito (takuya.ito@rutgers.edu)
 #### Citation: Ito T, Kulkarni KR, Schultz DH, Mill RD, Chen RH, Solomyak LI, Cole MW (2017). Cognitive task information is transferred between brain regions via resting-state network topology. bioRxiv. https://doi.org/10.1101/101782
-#### Last update: 04/11/2017
+#### Last update: 04/24/2017
 #### Refer to methods and supplementary materials for full description of model
 
 ## Directory organization:
@@ -22,7 +22,7 @@
   * All panels in Supplementary Fig. 3
 * N.B. Running entire script with 10 parallel processes (on a large server) takes about 1-2 minutes. 
  
-**Directory:** utils/
+**Modules:** 
 * **File: model.py** Contains primary functions for actually running the computational model (simulations)
   * Main method: model.subjectSimulationAndSaveToFile()
   * N.B. Running model.subjectSimulationAndSaveToFile() takes roughly 10-12 minutes per subject on a large server.
