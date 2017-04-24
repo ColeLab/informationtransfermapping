@@ -16,4 +16,4 @@
 * Contains demos for our empirical network-to-network information transfer mapping results. Specifically, replicates Supplementary Fig. 1. See subdirectory for other details. 
 
 **Directory:** utils/
-* **File: multregressionconnectivity.py** Contains a function to estimate functional connectivity using multiple linear regression
+* **File: multregressionconnectivity.py** Contains a function to estimate functional connectivity using multiple linear regression.

@@ -11,8 +11,8 @@
 * Unzip prior to running ItoEtAl2017_ComputationalModelGroupAnalysis.ipynb
 
 **File:** ItoEtAl2017_ComputationalModelTutorial.ipynb
-* Contains a introductory tutorial to the formulation of the computational model used in the study
-* Generates simple and illustrative figure of the simulation data
+* Contains an introductory tutorial to the formulation of the computational model used in the study
+* Generates simple and illustrative figures of the simulation data
 
 **File:** ItoEtAl2017_ComputationalModelGroupAnalysis.ipynb
 * Contains code that performs group analysis on provided data (or self-generated data)

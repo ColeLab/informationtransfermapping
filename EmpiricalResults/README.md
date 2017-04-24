@@ -6,16 +6,16 @@
 #### Refer to methods and supplemental materials for full description of method
 
 ## Directory organization:
-**File:** data.zip
+**File:** data.zip -- unzip prior to running jupyter notebooks
 * A zip file containing all empirical preprocessed data necessary to generate panels in Supplementary Fig. 1
-* Contains MiniblockActivations: Whole brain, miniblock beta activation coefficients (for all 128 miniblocks). Obtained using a beta series regression on each miniblock in the experimental paradigm, for every brain region in the Glasser et al. (2016) atlas. One file for every subject.
+* Contains MiniblockActivations: Whole brain, miniblock beta activation coefficients (for all 128 miniblocks). Obtained using a beta series regression on each miniblock (on preprocessed data) for every brain region in the Glasser et al. (2016) atlas. One file for every subject.
 * FC_Estimate: Whole brain functional connectivity matrix obtained during resting-state fMRI. Estimated using multiple linear regression (see Methods).
-* CPROTaskIdentifiers: Task-rule condition file. Every subject has three files, one for each rule domain (logic, sensory, and motor). Each csv file is organized as a sample (i.e., miniblock) X condition (task-rule) matrix. For each condition (or task-rule), there are 32 samples. Since there are four task-rules for each rule domain, we have 128 elements in total (corresponding to the 128 miniblocks).
+* CPROTaskIdentifiers: Task-rule label file. Every subject has three files, one for each rule domain (logic, sensory, and motor). Each csv file is organized as a sample (i.e., miniblock) X condition (task-rule) matrix. For each condition (or task-rule), there are 32 samples. Since there are four task-rules for each rule domain, we have 128 elements in total (corresponding to the 128 miniblocks).
 * network_array.csv: Network assignments for the Glasser et al. (2016) atlas. Organized as a 1D array.
 
 **File:** Demo_Network2NetworkInformationTransfer.ipynb
 * Jupyter notebook that performs network-to-network information transfer mapping on the provided empirical data. Replicates panels shown in Supplementary Fig. 1
 
-**File:** networkInformationTransferMapping.py
+**File:** networkinformationtransfer.py
 * Main python module containing functions to perform empirical network-to-network information transfer mapping.
 
