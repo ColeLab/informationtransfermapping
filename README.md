@@ -6,14 +6,6 @@
 #### Refer to methods and supplemental materials for full descriptions
 
 ## Directory organization:
-**File:** ItoEtAl2017_Simulations.zip
-* A zip file containing simulated data generated from computational model
-* Unzip prior to running ItoEtAl2017_ComputationalModelGroupAnalysis.ipynb
-
-**File:** ItoEtAl2017_ComputationalModelTutorial.ipynb
-* Contains a introductory tutorial to the formulation of the computational model used in the study
-* Generates simple and illustrative figure of the simulation data
-
 **Module:** informationtransfermapping.py
 * Contains demo code and demo functions for performing information transfer mapping. See EmpiricalResults demo for example implementation. 
 
