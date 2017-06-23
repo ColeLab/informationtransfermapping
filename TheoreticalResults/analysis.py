@@ -137,6 +137,7 @@ def predictedToActualRSA((subj,net,fromnet,tasks,nblocks,Ci,nodespercommunity,da
             for task_b in tasks:
                 test_ind = task_ind[task_a][cv] # Compare task a
                 rho_tmp = stats.spearmanr(prototype[task_b].T,actflow_mat[test_ind,:].T)[0] # With task b
+                rho_tmp = np.arctanh(rho_tmp)
                 if task_a==task_b:
                     # Match!
                     matched_rhos.append(rho_tmp)
@@ -145,8 +146,8 @@ def predictedToActualRSA((subj,net,fromnet,tasks,nblocks,Ci,nodespercommunity,da
 
     
     # Get averages 
-    matched_rhos_avg = np.arctanh(np.mean(matched_rhos))
-    mismatch_rhos_avg = np.arctanh(np.mean(mismatch_rhos))
+    matched_rhos_avg = np.mean(matched_rhos)
+    mismatch_rhos_avg = np.mean(mismatch_rhos)
     info_transfer_est = matched_rhos_avg - mismatch_rhos_avg
     return info_transfer_est
         
