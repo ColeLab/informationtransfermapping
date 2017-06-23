@@ -65,11 +65,13 @@ def predictedToActualSimilarity(predictions,actual,labels):
                 trainmb = trainmb.astype('int')
                 actualprototype = np.mean(actual[trainmb,:],axis=0) # average across training samples to obtain prototype
 
+                r = stats.spearmanr(predicted_miniblock,actualprototype)[0]
+                r = np.arctanh(r)
                 # If condition matches
                 if cond1==cond2:
-                    corr.append(stats.spearmanr(predicted_miniblock,actualprototype)[0])
+                    corr.append(r)
                 else:
-                    err.append(stats.spearmanr(predicted_miniblock,actualprototype)[0])
+                    err.append(r)
 
         # Get average matches for this cross-validation fold
         correct_matches.append(np.mean(corr))
