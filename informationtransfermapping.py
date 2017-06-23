@@ -3,7 +3,7 @@
 # 1. x to y activity flow mapping
 # 2. predicted-to-actual similarity analysis
 
-# Author: Takuya Ito (takuya.ito@rutgers.edu)
+# Takuya Ito (takuya.ito@rutgers.edu)
 # Citation: Ito T, Kulkarni KR, Schultz DH, Mill RD, Chen RH, Solomyak LI, Cole MW (2017). Cognitive task information is transferred between brain regions via resting-state netw    ork topology. bioRxiv. https://doi.org/10.1101/101782
 
 ## Import modules
