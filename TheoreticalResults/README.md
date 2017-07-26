@@ -6,9 +6,10 @@
 #### Refer to methods and supplemental materials for full description of model
 
 ## Directory organization:
-**File:** ItoEtAl2017_Simulations.zip
-* A zip file containing simulated data generated from computational model
-* Unzip prior to running ItoEtAl2017_ComputationalModelGroupAnalysis.ipynb
+**Directory:** ItoEtAl2017_Simulations
+* Contains 3 zip files, each containing simulation data (restFC matrices, activity flow predictions, task-activation betas)
+* To be able to run the code demo (ItoEtAl2017_ComputationalModelGroupAnalysis.ipynb), it is necessary to unzip all 3 files.
+* An alternative would be to to simulate one's own data, and then modify the tutorial notebook to load in data from the new simulations.
 
 **File:** ItoEtAl2017_ComputationalModelTutorial.ipynb
 * Contains an introductory tutorial to the formulation of the computational model used in the study
