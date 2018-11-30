@@ -1,6 +1,6 @@
 # Information transfer mapping
 #### Public code release for Ito et al. (2017)
-#### Takuya Ito (takuya.ito@rutgers.edu)
+#### Takuya Ito (taku.ito1@gmail.com)
 #### Citation: Ito T, Kulkarni KR, Schultz DH, Mill RD, Chen RH, Solomyak LI, Cole MW (2017) “Cognitive task information is transferred between brain regions via resting-state network topology.”. Nature Communications. 8:1027. PMID: 29044112 http://doi.org/10.1038/s41467-017-01000-w 
 #### Last update: 07/26/2017
 #### Refer to methods and supplementary materials for full descriptions
